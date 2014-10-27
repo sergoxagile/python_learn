@@ -17,10 +17,10 @@ class Robot:
     def sayHi(self):
         print('Hello my loard. My name is {}'.format(self.name))
 
+    @staticmethod
     def howMany():
         print('You have {} robots'.format(Robot.population))
 
-    howMany = staticmethod(howMany)
 
 droid1 = Robot('R2-D2')
 droid1.sayHi()
